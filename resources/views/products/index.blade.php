@@ -7,9 +7,12 @@
             <div class="pull-left">
                 <h2>Laravel CRUD Services</h2>
             </div>
+
             <div class "pull-right">
                 <a class="btn btn-success" href="{{ route('products.create') }}">Create New Product</a>
             </div>
+
+
         </div>
     </div>
 
@@ -44,6 +47,7 @@
         @endforeach
     </table>
     {{ $products->links('pagination::bootstrap-5') }}
+    <a href="/">Home</a>
 
 
 

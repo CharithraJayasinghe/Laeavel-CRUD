@@ -16,7 +16,8 @@
         </style>
     </head>
     <body class="antialiased">
-        >
+
+
         <div class="relative sm:flex sm:justify-center sm:items-center min-h-screen bg-dots-darker bg-center bg-gray-100 dark:bg-dots-lighter dark:bg-gray-900 selection:bg-red-500 selection:text-white">
             @if (Route::has('login'))
                 <div class="sm:fixed sm:top-0 sm:right-0 p-6 text-right">
@@ -131,9 +132,10 @@
                         </div>
                     </div>
 
-                    <div class="ml-4 text-center text-sm text-gray-500 dark:text-gray-400 sm:text-right sm:ml-0">
-                        Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})
-                    </div>
+
+                    <div class "pull-right">
+                    <a class="btn btn-success" >Create New Product</a>
+                </div>
                 </div>
             </div>
         </div>

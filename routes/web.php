@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
@@ -13,9 +14,17 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/test', function () {
+    return config("app.env");
 });
 
+
+Route::get('/', function () {
+    return view('home');
+});
+
+
+
+
 Route::resource('products', ProductController::class);
+Route::resource('customers', CustomerController::class);
