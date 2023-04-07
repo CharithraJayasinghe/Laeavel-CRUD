@@ -1,6 +1,9 @@
 <?php
 
-use App\Http\Controllers\CustomerController;
+
+use App\Http\Controllers\BooksController;
+use App\Http\Controllers\DemoController;
+use App\Http\Controllers\DriverController;
 use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
@@ -25,6 +28,10 @@ Route::get('/', function () {
 
 
 
+Route::post('/books', [BooksController::class, 'store']);
+Route::post('/cars', [DemoController::class, 'store']);
+
+
 
 Route::resource('products', ProductController::class);
-Route::resource('customers', CustomerController::class);
+Route::resource('drivers', DriverController::class);

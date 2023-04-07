@@ -5,5 +5,5 @@
 </head>
 <body>
     <a href="/products">Go to products</a><br>
-    <a href="/customers">Go to customers</a>
+    <a href="/drivers">Go to drivers</a>
 </body>

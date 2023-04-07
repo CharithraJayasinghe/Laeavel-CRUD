@@ -7,7 +7,7 @@
 </head>
 <body class="bg-color">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
-<h1>Laravel CRUD Customer</h1>
+<h1>Laravel CRUD Driver</h1>
 <div class="container">
     <br>
     @yield('content')

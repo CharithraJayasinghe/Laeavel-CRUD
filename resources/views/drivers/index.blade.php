@@ -11,7 +11,7 @@
             <div class "pull-right">
             <a class="btn btn-success" href="{{ route('products.create') }}">Create New Customer</a>
         </div>
-        <a href="/">Go to products</a>
+        <a href="/">Home</a>
 
     </div>
     </div>
