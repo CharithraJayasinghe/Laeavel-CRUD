@@ -2,6 +2,7 @@
 
 
 use App\Http\Controllers\BooksController;
+use App\Http\Controllers\CartController;
 use App\Http\Controllers\DemoController;
 use App\Http\Controllers\DriverController;
 use App\Http\Controllers\ProductController;
@@ -29,9 +30,11 @@ Route::get('/', function () {
 
 
 Route::post('/books', [BooksController::class, 'store']);
+
 Route::post('/cars', [DemoController::class, 'store']);
 
-
+Route::post('/cart/add', [CartController::class, 'addItem']);
 
 Route::resource('products', ProductController::class);
+
 Route::resource('drivers', DriverController::class);
