@@ -5,7 +5,9 @@ use App\Http\Controllers\BooksController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\DemoController;
 use App\Http\Controllers\DriverController;
+use App\Http\Controllers\LocalizationController;
 use App\Http\Controllers\ProductController;
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -38,3 +40,32 @@ Route::post('/cart/add', [CartController::class, 'addItem']);
 Route::resource('products', ProductController::class);
 
 Route::resource('drivers', DriverController::class);
+
+
+
+
+
+Route::get('/home', function () {
+    return view('home');
+})->name('home');
+
+Route::get('/about', function () {
+    return view('about');
+})->name('about');
+
+
+
+Route::get('/services', function () {
+    return view('services');
+})->name('services');
+
+Route::get('/contact', function () {
+    return view('contact');
+})->name('contact');
+
+
+
+
+
+
+Route::get("locale/{lange}", [LocalizationController::class, 'setLang']);
